@@ -2,27 +2,27 @@ import type { Metadata } from 'next'
 import { Mail, Linkedin, Globe, Twitter } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'India Jade — Founder, Partnerships | KRX Labs',
+  title: 'India Jade — Founder, Partnerships | Indibrief',
   description:
-    'Executive profile of India Jade, Founder at KRX Labs, leading partnerships and strategic alliances.',
+    'Executive profile of India Jade at Indibrief, leading partnerships and strategic alliances.',
   alternates: { canonical: '/india' },
   openGraph: {
     url: '/india',
-    title: 'India Jade — Founder, Partnerships | KRX Labs',
+    title: 'India Jade — Founder, Partnerships | Indibrief',
     description:
-      'Founder at KRX Labs. Focused on partnerships, strategic alliances, and growth.',
-    siteName: 'KRX Labs',
+      'Indibrief. Focused on partnerships, strategic alliances, and growth.',
+    siteName: 'Indibrief',
     images: [{ url: '/og-image.svg', width: 1200, height: 630, type: 'image/svg+xml' }],
     type: 'profile',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'India Jade — Founder, Partnerships | KRX Labs',
-    description: 'Founder at KRX Labs. Partnerships and strategic alliances.',
+    title: 'India Jade — Founder, Partnerships | Indibrief',
+    description: 'Indibrief. Partnerships and strategic alliances.',
     images: ['/og-image.svg'],
   },
   robots: { index: true, follow: true },
-  authors: [{ name: 'KRX Labs', url: 'https://krxlab.com' }],
+  authors: [{ name: 'Indibrief', url: 'https://indibrief.com' }],
 }
 
 export default function IndiaProfilePage() {
@@ -34,7 +34,7 @@ export default function IndiaProfilePage() {
           <div className="flex items-center justify-center">
             <img
               src="/logo.png"
-              alt="KRX Labs Logo"
+              alt="Indibrief Logo"
               width={48}
               height={48}
               className="w-12 h-12 invert"
@@ -93,7 +93,7 @@ export default function IndiaProfilePage() {
               Website
             </a>
             <a
-              href="mailto:partners@krxlab.com"
+              href="mailto:hi@indibrief.com"
               aria-label="Email"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-300 hover:bg-zinc-100 transition-colors text-sm font-euclidCircularB tracking-[-0.04em]"
             >

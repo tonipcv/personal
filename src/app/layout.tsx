@@ -2,7 +2,6 @@
 import './globals.css'
 import type { Metadata, Viewport } from 'next'
 import { Space_Grotesk } from 'next/font/google';
-import { KRX_ICON_SVG, KRX_SOCIAL_IMAGE_SVG } from '@/constants/brand'
 import Script from "next/script"
 import { LanguageProvider } from './components/LanguageProvider'
 
@@ -13,8 +12,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'KRX Lab | Software Infrastructure',
-  description: 'KRX Labs designs custom software infrastructures for companies operating in fast-growing markets — where every second matters and technology needs to respond with surgical precision and strategic intent.',
+  title: 'Indibrief - Tech Debriefs',
+  description: 'Indibrief publishes curated analysis and research on artificial intelligence, venture capital, and regulation.',
   keywords: [
     'custom app development',
     'rapid app deployment',
@@ -41,9 +40,9 @@ export const metadata: Metadata = {
     'secure development',
     'tech consulting'
   ],
-  authors: [{ name: 'KRX Lab', url: 'https://krxlab.com' }],
-  creator: 'KRX Lab',
-  publisher: 'KRX Lab',
+  authors: [{ name: 'Indibrief', url: 'https://indibrief.com' }],
+  creator: 'Indibrief',
+  publisher: 'Indibrief',
   formatDetection: {
     email: false,
     address: false,
@@ -61,7 +60,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'KRX Lab | Software Infrastructure',
+    title: 'Indibrief - Tech Debriefs',
   },
   robots: {
     index: true,
@@ -75,16 +74,16 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://krxlab.com',
+    canonical: 'https://indibrief.com',
     languages: {
-      'en-US': 'https://krxlab.com'
+      'en-US': 'https://indibrief.com'
     }
   },
   openGraph: {
-    title: 'KRX Lab | Software Infrastructure & Security Solutions',
-    description: 'KRX Labs specializes in building secure, scalable software infrastructures for fast-growing companies. Expert solutions in cybersecurity, cloud architecture, and enterprise software.',
-    url: 'https://krxlab.com',
-    siteName: 'KRX Lab',
+    title: 'Indibrief - Tech Debriefs',
+    description: 'Curated analysis and research on AI, venture capital, and regulation.',
+    url: 'https://indibrief.com',
+    siteName: 'Indibrief',
     images: [
       {
         url: '/og-image.svg',
@@ -98,8 +97,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'KRX Lab | Software Infrastructure & Security Solutions',
-    description: 'KRX Labs specializes in building secure, scalable software infrastructures for fast-growing companies. Expert solutions in cybersecurity, cloud architecture, and enterprise software.',
+    title: 'Indibrief - Tech Debriefs',
+    description: 'Curated analysis and research on AI, venture capital, and regulation.',
     images: ['/og-image.svg'],
   },
   verification: {
@@ -109,10 +108,10 @@ export const metadata: Metadata = {
     'google-site-verification': process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '',
   },
   category: 'technology',
-  applicationName: 'KRX Lab',
+  applicationName: 'Indibrief - Tech Debriefs',
   referrer: 'origin-when-cross-origin',
   assets: ['/careers'],
-  metadataBase: new URL('https://krxlab.com')
+  metadataBase: new URL('https://indibrief.com')
 };
 
 export const viewport: Viewport = {

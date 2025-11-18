@@ -23,7 +23,7 @@ const translations = {
     // Home
     'home.building': 'Precision-built technology',
     'home.theFuture': '',
-    'home.description': 'KRX Labs designs custom software infrastructures, designed for companies operating in fast-growing markets — where every second counts, and technology needs to respond with surgical precision and strategic purpose.',
+    'home.description': 'Indibrief publishes curated analysis and research on AI, venture capital, and regulation.',
     'home.applyNow': 'APPLY NOW!',
     'home.exploreBlog': 'EXPLORE BLOG',
     'home.ourBlog': 'Our ',
@@ -37,7 +37,7 @@ const translations = {
     'home.madeBy': 'made by',
 
     // Blog
-    'blog.title': 'Blog KRX',
+    'blog.title': 'Indibrief Blog',
     'blog.subtitle': 'Exploring the future of technology and how AI is transforming our world',
     'blog.search': 'Search articles...',
     'blog.all': 'All',
@@ -64,7 +64,7 @@ const translations = {
     // Home
     'home.building': 'Precision-built technology',
     'home.theFuture': '',
-    'home.description': 'A KRX Labs projeta infraestruturas de software sob medida, concebidas para empresas que operam em mercados de crescimento acelerado — onde cada segundo conta, e a tecnologia precisa responder com precisão cirúrgica e propósito estratégico.',
+    'home.description': 'O Indibrief publica análises e pesquisas curadas sobre IA, venture capital e regulação.',
     'home.applyNow': 'INSCREVA-SE!',
     'home.exploreBlog': 'EXPLORAR BLOG',
     'home.ourBlog': 'Nosso ',
@@ -78,7 +78,7 @@ const translations = {
     'home.madeBy': 'feito por',
 
     // Blog
-    'blog.title': 'Blog KRX',
+    'blog.title': 'Blog Indibrief',
     'blog.subtitle': 'Explorando o futuro da tecnologia e como a IA está transformando nosso mundo',
     'blog.search': 'Buscar artigos...',
     'blog.all': 'Todos',
