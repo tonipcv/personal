@@ -19,7 +19,7 @@ export default function Home() {
               I am India Piercy. I hold a degree from the University of Bristol and a master’s degree from the London School of Economics and Political Science (LSE).
             </p>
             <p>
-              My work focuses on artificial intelligence, venture capital, and regulation. I founded Indibrief to share my research and to curate the news and analysis that matter most in these fields.
+              My work focuses on artificial intelligence and regulation. I founded Indibrief to share my research and to curate the news and analysis that matter most in these fields.
             </p>
             <p>
               Suggestions or requests to connect are welcome at <a href="mailto:hi@indibrief.com" className="text-blue-700 underline">hi@indibrief.com</a>.
