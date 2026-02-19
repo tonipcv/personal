@@ -4,7 +4,9 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   compress: true,
   reactStrictMode: true,
-  swcMinify: true,
+  turbopack: {
+    root: __dirname,
+  },
   images: {
     domains: ['indibrief.com', 'koraxlabs.com'],
     formats: ['image/avif', 'image/webp'],
