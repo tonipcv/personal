@@ -8,21 +8,33 @@ export default function Home() {
     <div className="min-h-screen bg-white text-zinc-900">
       <div className="max-w-3xl mx-auto px-4 py-12">
         <header className="mb-8">
-          <h1 className="text-3xl font-serif font-normal tracking-tight">Indibrief</h1>
+       
+          <nav className="mt-2">
+            <a href="/blog" className="text-sm text-blue-700 underline">Blog</a>
+          </nav>
           <hr className="mt-3 border-zinc-200" />
         </header>
 
         <main className="font-serif leading-relaxed">
           <section className="space-y-4">
-            <h2 className="text-2xl font-serif font-normal">About</h2>
+            <h1 className="text-3xl font-serif font-normal">Hi, I'm Toni Nasc.</h1>
             <p>
-              I am India Piercy. I hold a degree from the University of Bristol and a master’s degree from the London School of Economics and Political Science (LSE).
+              My work and research focus on distributed systems, data governance, and infrastructure that enforces guarantees.
             </p>
             <p>
-              My work focuses on artificial intelligence and regulation. I founded Indibrief to share my research and to curate the news and analysis that matter most in these fields.
+              I’ve built retry-safe transactional systems and Rust-based sidecar components for sensitive data control within database clusters, with a strong emphasis on reliability and predictable system behavior.
             </p>
             <p>
-              Suggestions or requests to connect are welcome at <a href="mailto:hi@indibrief.com" className="text-blue-700 underline">hi@indibrief.com</a>.
+              I began programming at 14 with Python. That same year, I won a national mathematics olympiad in Brazil. After high school, I was admitted to a public university, but was already building and selling software applications while pursuing entrepreneurial projects.
+            </p>
+            <p>
+              Throughout my career, I’ve completed advanced coursework in Computer Science, Cybersecurity, and Machine Learning, and have worked on multiple research-oriented technical challenges across infrastructure and applied AI.
+            </p>
+            <p>
+              I’m currently exploring governance-enforced data pipelines and high-performance infrastructure architectures through my work at Xase.ai.
+            </p>
+            <p>
+              My mission is to help AI systems reach higher levels of specialization in domains where training data is scarce, sensitive, or highly regulated.
             </p>
           </section>
         </main>

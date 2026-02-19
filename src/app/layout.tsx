@@ -12,37 +12,27 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'Indibrief - Tech Debriefs',
-  description: 'Indibrief publishes curated analysis and research on artificial intelligence, venture capital, and regulation.',
+  title: 'Antonioni Nascimento Oliveira — Software Engineer (Payments, Cybersecurity, Fraud, Data)',
+  description: 'Official site of Antonioni Nascimento Oliveira, software engineer with 14+ years building scalable systems in payments, cybersecurity, fraud detection, and data infrastructure.',
   keywords: [
-    'custom app development',
-    'rapid app deployment',
-    'tech startup',
-    'influencer platform',
-    'scalable solutions',
-    'white label software',
-    'audience monetization',
-    'digital assets',
-    'creator economy',
-    'tech careers',
-    'software development',
-    'Abu Dhabi tech jobs',
-    'remote tech jobs',
-    'developer positions',
-    'tech opportunities',
-    'Abu Dhabi jobs',
-    'remote jobs',
+    'Antonioni',
+    'Antonioni Nascimento',
+    'Antonioni Nascimento Oliveira',
+    'software engineer',
+    'payments',
+    'payment platforms',
     'cybersecurity',
-    'infrastructure security',
-    'software architecture',
-    'cloud solutions',
-    'enterprise software',
-    'secure development',
-    'tech consulting'
+    'fraud detection',
+    'anti-fraud',
+    'data infrastructure',
+    'scalable systems',
+    'e-commerce architecture',
+    'data protection',
+    'Stanford cybersecurity'
   ],
-  authors: [{ name: 'Indibrief', url: 'https://indibrief.com' }],
-  creator: 'Indibrief',
-  publisher: 'Indibrief',
+  authors: [{ name: 'Antonioni Nascimento Oliveira', url: 'https://indibrief.com' }],
+  creator: 'Antonioni Nascimento Oliveira',
+  publisher: 'Antonioni Nascimento Oliveira',
   formatDetection: {
     email: false,
     address: false,
@@ -60,7 +50,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'Indibrief - Tech Debriefs',
+    title: 'Antonioni Nascimento Oliveira',
   },
   robots: {
     index: true,
@@ -80,10 +70,10 @@ export const metadata: Metadata = {
     }
   },
   openGraph: {
-    title: 'Indibrief - Tech Debriefs',
-    description: 'Curated analysis and research on AI, venture capital, and regulation.',
+    title: 'Antonioni Nascimento Oliveira — Software Engineer',
+    description: '14+ years building scalable systems in payments, cybersecurity, fraud detection, and data infrastructure.',
     url: 'https://indibrief.com',
-    siteName: 'Indibrief',
+    siteName: 'Antonioni Nascimento Oliveira',
     images: [
       {
         url: '/og-image.svg',
@@ -97,8 +87,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Indibrief - Tech Debriefs',
-    description: 'Curated analysis and research on AI, venture capital, and regulation.',
+    title: 'Antonioni Nascimento Oliveira — Software Engineer',
+    description: '14+ years in payments, cybersecurity, fraud detection, and data infrastructure.',
     images: ['/og-image.svg'],
   },
   verification: {
@@ -108,7 +98,7 @@ export const metadata: Metadata = {
     'google-site-verification': process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '',
   },
   category: 'technology',
-  applicationName: 'Indibrief - Tech Debriefs',
+  applicationName: 'Antonioni Nascimento Oliveira',
   referrer: 'origin-when-cross-origin',
   assets: ['/careers'],
   metadataBase: new URL('https://indibrief.com')
@@ -141,6 +131,20 @@ export default function RootLayout({
           `}
         </Script>
         {/* End Google Tag Manager */}
+        <Script id="person-schema" type="application/ld+json" strategy="afterInteractive">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Person',
+            name: 'Antonioni Nascimento Oliveira',
+            url: 'https://indibrief.com',
+            description:
+              'Software engineer with 14+ years building scalable systems in payments, cybersecurity, fraud detection, and data infrastructure.',
+            sameAs: [
+              'https://www.linkedin.com/in/antonioni/',
+            ],
+            jobTitle: 'Software Engineer',
+          })}
+        </Script>
       </head>
       <body className={`${spaceGrotesk.className} antialiased`}>
         {/* Google Tag Manager (noscript) */}
