@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     'data protection',
     'Stanford cybersecurity'
   ],
-  authors: [{ name: 'Antonioni Nascimento Oliveira', url: 'https://indibrief.com' }],
+  authors: [{ name: 'Antonioni Nascimento Oliveira' }],
   creator: 'Antonioni Nascimento Oliveira',
   publisher: 'Antonioni Nascimento Oliveira',
   formatDetection: {
@@ -64,15 +64,15 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://indibrief.com',
+    canonical: '/',
     languages: {
-      'en-US': 'https://indibrief.com'
+      'en-US': '/'
     }
   },
   openGraph: {
     title: 'Antonioni Nascimento Oliveira — Software Engineer',
     description: '14+ years building scalable systems in payments, cybersecurity, fraud detection, and data infrastructure.',
-    url: 'https://indibrief.com',
+    url: '/',
     siteName: 'Antonioni Nascimento Oliveira',
     images: [
       {
@@ -101,7 +101,6 @@ export const metadata: Metadata = {
   applicationName: 'Antonioni Nascimento Oliveira',
   referrer: 'origin-when-cross-origin',
   assets: ['/careers'],
-  metadataBase: new URL('https://indibrief.com')
 };
 
 export const viewport: Viewport = {
@@ -136,7 +135,7 @@ export default function RootLayout({
             '@context': 'https://schema.org',
             '@type': 'Person',
             name: 'Antonioni Nascimento Oliveira',
-            url: 'https://indibrief.com',
+            url: '/',
             description:
               'Software engineer with 14+ years building scalable systems in payments, cybersecurity, fraud detection, and data infrastructure.',
             sameAs: [

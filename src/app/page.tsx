@@ -9,33 +9,29 @@ export default function Home() {
       <div className="max-w-3xl mx-auto px-4 py-12">
         <header className="mb-8">
        
-          <nav className="mt-2">
-            <a href="/blog" className="text-sm text-blue-700 underline">Blog</a>
-          </nav>
           <hr className="mt-3 border-zinc-200" />
         </header>
 
         <main className="font-serif leading-relaxed">
           <section className="space-y-4">
-            <h1 className="text-3xl font-serif font-normal">Hi, I'm Toni Nasc.</h1>
-            <p>
-              My work and research focus on distributed systems, data governance, and infrastructure that enforces guarantees.
-            </p>
-            <p>
-              I’ve built retry-safe transactional systems and Rust-based sidecar components for sensitive data control within database clusters, with a strong emphasis on reliability and predictable system behavior.
-            </p>
-            <p>
-              I began programming at 14 with Python. That same year, I won a national mathematics olympiad in Brazil. After high school, I was admitted to a public university, but was already building and selling software applications while pursuing entrepreneurial projects.
-            </p>
-            <p>
-              Throughout my career, I’ve completed advanced coursework in Computer Science, Cybersecurity, and Machine Learning, and have worked on multiple research-oriented technical challenges across infrastructure and applied AI.
-            </p>
-            <p>
-              I’m currently exploring governance-enforced data pipelines and high-performance infrastructure architectures through my work at Xase.ai.
-            </p>
-            <p>
-              My mission is to help AI systems reach higher levels of specialization in domains where training data is scarce, sensitive, or highly regulated.
-            </p>
+            <h1 className="text-3xl font-serif font-normal">Antonioni Nascimento Oliveira</h1>
+            <ul className="list-disc pl-5 space-y-3">
+              <li>
+                <span className="font-semibold">Trace</span>, hybrid autonomous SWE-Bench agent that reduces context overflow and file retrieval failures using AST-aware search and iterative refinement.
+              </li>
+              <li>
+                <span className="font-semibold">Adversaria</span>, a Rust-based adversarial testing harness for LLMs with multi-provider support and structured risk scoring.
+              </li>
+              <li>
+                <span className="font-semibold">Aegis</span>, a deterministic capability firewall for LLMs using taint tracking and policy DSL enforcement instead of prompt filtering.
+              </li>
+              <li>
+                <span className="font-semibold">Zenta</span>, a multi-language CLI and SDK suite for scanning and migrating classical crypto to NIST post-quantum algorithms in ML infrastructure.
+              </li>
+              <li>
+                <span className="font-semibold">ETH.id</span>, a zero-knowledge document verification system combining local privacy filters with LLM semantic verification.
+              </li>
+            </ul>
           </section>
         </main>
       </div>
