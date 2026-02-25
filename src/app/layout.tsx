@@ -40,10 +40,10 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' }
+      { url: '/favicon.ico', sizes: 'any', type: 'image/x-icon' }
     ],
     apple: [
-      { url: '/favicon-32x32.png' }
+      { url: '/favicon.ico' }
     ]
   },
   manifest: '/manifest.json',
@@ -118,7 +118,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="preconnect" href="https://api.fontshare.com" />
-        <link rel="icon" href="/favicon-32x32.png" />
+        <link rel="icon" href="/favicon.ico" />
         {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
