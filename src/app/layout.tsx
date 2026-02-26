@@ -12,27 +12,16 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'Antonioni Nascimento Oliveira — Software Engineer (Payments, Cybersecurity, Fraud, Data)',
-  description: 'Official site of Antonioni Nascimento Oliveira, software engineer with 14+ years building scalable systems in payments, cybersecurity, fraud detection, and data infrastructure.',
+  title: 'Antonioni — Engineer',
+  description: 'I build systems across payments, security, and data.',
   keywords: [
-    'Antonioni',
-    'Antonioni Nascimento',
     'Antonioni Nascimento Oliveira',
-    'software engineer',
+    'software',
+    'security',
     'payments',
-    'payment platforms',
-    'cybersecurity',
-    'fraud detection',
-    'anti-fraud',
-    'data infrastructure',
-    'scalable systems',
-    'e-commerce architecture',
-    'data protection',
-    'Stanford cybersecurity'
+    'data'
   ],
   authors: [{ name: 'Antonioni Nascimento Oliveira' }],
-  creator: 'Antonioni Nascimento Oliveira',
-  publisher: 'Antonioni Nascimento Oliveira',
   formatDetection: {
     email: false,
     address: false,
@@ -63,32 +52,19 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  alternates: {
-    canonical: '/',
-    languages: {
-      'en-US': '/'
-    }
-  },
+  alternates: { canonical: '/' },
   openGraph: {
-    title: 'Antonioni Nascimento Oliveira — Software Engineer',
-    description: '14+ years building scalable systems in payments, cybersecurity, fraud detection, and data infrastructure.',
+    title: 'Antonioni — Engineer',
+    description: 'Systems, security, payments, data.',
     url: '/',
-    siteName: 'Antonioni Nascimento Oliveira',
-    images: [
-      {
-        url: '/og-image.svg',
-        width: 1200,
-        height: 630,
-        type: 'image/svg+xml',
-      }
-    ],
-    locale: 'en-US',
+    siteName: 'Antonioni',
+    images: [{ url: '/og-image.svg', width: 1200, height: 630, type: 'image/svg+xml' }],
     type: 'website',
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Antonioni Nascimento Oliveira — Software Engineer',
-    description: '14+ years in payments, cybersecurity, fraud detection, and data infrastructure.',
+    card: 'summary',
+    title: 'Antonioni — Engineer',
+    description: 'Systems, security, payments, data.',
     images: ['/og-image.svg'],
   },
   verification: {
@@ -97,10 +73,8 @@ export const metadata: Metadata = {
   other: {
     'google-site-verification': process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '',
   },
-  category: 'technology',
-  applicationName: 'Antonioni Nascimento Oliveira',
+  applicationName: 'Antonioni',
   referrer: 'origin-when-cross-origin',
-  assets: ['/careers'],
 };
 
 export const viewport: Viewport = {
@@ -136,12 +110,6 @@ export default function RootLayout({
             '@type': 'Person',
             name: 'Antonioni Nascimento Oliveira',
             url: '/',
-            description:
-              'Software engineer with 14+ years building scalable systems in payments, cybersecurity, fraud detection, and data infrastructure.',
-            sameAs: [
-              'https://www.linkedin.com/in/antonioni/',
-            ],
-            jobTitle: 'Software Engineer',
           })}
         </Script>
       </head>
