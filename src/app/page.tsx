@@ -542,6 +542,14 @@ Proves amount comparison without revealing exact value.
 - LLM Verification: 1-3s
 - Memory Usage: ~50MB + document size`
   }
+  ,
+  {
+    id: 'grabkit',
+    title: 'GrabKit',
+    tagline:
+      'High-quality, resilient web content extraction toolkit that converts messy pages into clean, main-content outputs for AI systems using domain templates, layered heuristics, a proven parser, and optional browser rendering.',
+    content: `# GrabKit — Reliable Web Content Extraction\n\nClean, structured access to the open web for AI systems.\n\n- Focus: extract high-signal main content from blogs, news, docs, technical pages\n- Avoids: navigation chrome, ads, popups, cookie banners, sidebars\n- Techniques: domain-specific templates + layered heuristics + proven parsing engine\n- Optional: headless browser rendering for dynamic pages\n- Output: consistent, machine-readable format for reasoning, summarization, indexing, training\n\nActs as a reliability layer between AI and the web.`
+  }
 ]
 
 export default function Home() {
