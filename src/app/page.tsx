@@ -11,6 +11,20 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: 'hugo-rl-llm',
+    title: 'Hugo RL-LLM',
+    tagline:
+      'Production-grade foundation platform for LLM-enhanced Reinforcement Learning with reproducibility, checkpointing, benchmarking, LLM frozen mode, and a plugin system.',
+    content: `# Hugo RL-LLM — Foundation Platform\n\nProduction-grade RL platform augmented with LLMs.\n\n- Reproducibility & deterministic runs\n- Checkpointing across policy + LLM context\n- Benchmarking harness\n- LLM frozen mode for stable evals\n- Plugin system for envs, policies, memories\n\nFocus: stability and comparability for research and production.`
+  },
+  {
+    id: 'strike',
+    title: 'Strike',
+    tagline:
+      'AI-augmented security testing framework in Rust: agent-based vulns discovery/validation, checkpointed workflow engine, LLM routing, CI policy gates (SARIF 2.1.0), and orchestration of nmap/nuclei/sqlmap/etc.',
+    content: `# Strike — AI-Augmented Security Testing (Rust)\n\nAgent-based architecture for discovery and validation.\n\n- Workflow engine with checkpoints\n- LLM routing (OpenAI, Anthropic, Gemini, OpenRouter)\n- CI gates with SARIF 2.1.0 export\n- External tool orchestration: nmap, nuclei, sqlmap, ffuf, httpx\n- Structured models: Finding, CVSS v4, Evidence, ROE\n\nCLI orchestration for end-to-end execution.`
+  },
+  {
     id: 'trace',
     title: 'Trace',
     tagline: 'Hybrid autonomous SWE-Bench agent that reduces context overflow and file retrieval failures using AST-aware search and iterative refinement.',
@@ -558,88 +572,29 @@ export default function Home() {
     <div className="min-h-screen bg-white text-black">
       <div className="max-w-4xl mx-auto px-6 py-8">
         {/* Header */}
-        <header className="mb-12 border-b border-gray-300 pb-4">
-          <h1 className="text-2xl font-normal mb-1">Antonioni Nascimento Oliveira</h1>
-          <p className="text-sm text-gray-600 mb-2">London, United Kingdom</p>
-          <nav className="flex gap-6 text-sm">
-            <a href="#technologies" className="text-blue-600 hover:underline">Technologies I'm Excited About</a>
-            <a href="#projects" className="text-blue-600 hover:underline">Cool Stuff</a>
-            <a href="#writing" className="text-blue-600 hover:underline">Writing</a>
-          </nav>
+        <header className="mb-10 border-b border-gray-200 pb-3">
+          <h1 className="text-2xl font-normal">Toni N.</h1>
+          <p className="text-sm text-gray-600 mt-1">Building and investing in technology.</p>
         </header>
 
         {/* Main Content */}
         <main>
           {/* Projects Section */}
           <section id="projects" className="mb-12">
-            <h2 className="text-xl font-semibold mb-4 border-b border-gray-200 pb-2">Projects</h2>
-            <div className="space-y-4">
+            <h2 className="text-base font-semibold mb-3 border-b border-gray-200 pb-1">Projects</h2>
+            <div className="space-y-2">
               {projects.map((project) => (
-                <div key={project.id} className="border-l-2 border-gray-300 pl-4">
-                  <div className="text-left w-full group">
-                    <h3 className="text-lg font-medium text-blue-600 group-hover:underline inline">{project.title}</h3>
-                    <p className="text-sm text-gray-700 mt-1">{project.tagline}</p>
+                <div key={project.id} className="border-l border-gray-200 pl-3">
+                  <div className="text-left w-full">
+                    <h3 className="text-sm font-medium text-gray-900 inline">{project.title}</h3>
+                    <p className="text-xs text-gray-600 mt-1">{project.tagline}</p>
                   </div>
                 </div>
               ))}
             </div>
           </section>
 
-          {/* Technologies Section */}
-          <section id="technologies" className="mb-12">
-            <h2 className="text-xl font-semibold mb-4 border-b border-gray-200 pb-2">Technologies I'm Excited About</h2>
-            <div className="space-y-3 text-sm">
-              <div>
-                <strong className="text-blue-600">Rust</strong> — Memory safety without garbage collection. Building security-critical infrastructure where correctness matters.
-              </div>
-              <div>
-                <strong className="text-blue-600">Post-Quantum Cryptography</strong> — NIST ML-KEM, ML-DSA, SLH-DSA. Preparing for quantum computing threats to current encryption.
-              </div>
-              <div>
-                <strong className="text-blue-600">Zero-Knowledge Proofs</strong> — Noir, Barretenberg, PLONK. Proving statements without revealing underlying data.
-              </div>
-              <div>
-                <strong className="text-blue-600">Tree-sitter</strong> — Incremental parsing for code analysis. Building AST-aware tools for multi-language codebases.
-              </div>
-              <div>
-                <strong className="text-blue-600">LLM Security</strong> — Taint tracking, capability firewalls, adversarial testing. Treating LLMs as confusable deputies.
-              </div>
-              <div>
-                <strong className="text-blue-600">Deterministic Systems</strong> — Pure functions, immutable data, reproducible builds. Eliminating non-determinism in critical paths.
-              </div>
-            </div>
-          </section>
-
-          {/* Cool Stuff Section */}
-          <section id="cool-stuff" className="mb-12">
-            <h2 className="text-xl font-semibold mb-4 border-b border-gray-200 pb-2">Cool Stuff</h2>
-            <div className="space-y-3 text-sm">
-              <div>
-                <strong>SWE-Bench</strong> — Autonomous agents solving real GitHub issues. Targeting 25-30% success rate through hybrid search and iterative refinement.
-              </div>
-              <div>
-                <strong>NIST PQC Standards</strong> — Implementing ML-KEM-768, ML-DSA-65, SLH-DSA-128s. First-class support for post-quantum algorithms in ML infrastructure.
-              </div>
-              <div>
-                <strong>Taint Analysis for LLMs</strong> — Tracking data flow through prompt chains. Preventing capability escalation through structural isolation.
-              </div>
-              <div>
-                <strong>Adversarial Testing</strong> — OWASP LLM Top 10 coverage. Automated security testing with 48 attack payloads across 4 categories.
-              </div>
-              <div>
-                <strong>Zero-Knowledge Document Verification</strong> — Answering questions about documents without exposing content. Privacy-preserving KYC.
-              </div>
-            </div>
-          </section>
-
-          {/* Writing Section */}
-          <section id="writing" className="mb-12">
-            <h2 className="text-xl font-semibold mb-4 border-b border-gray-200 pb-2">Writing</h2>
-            <div className="space-y-3 text-sm text-gray-600">
-              <p>Technical documentation and architecture decisions for the projects above.</p>
-              <p>Focus areas: distributed systems, cryptography, LLM security, formal methods.</p>
-            </div>
-          </section>
+          {/* Removed extra sections for a more minimal, Wikipedia-like layout */}
         </main>
 
         
@@ -648,7 +603,7 @@ export default function Home() {
         <footer className="mt-16 pt-8 border-t border-gray-300 text-sm text-gray-600">
           <div className="flex justify-between items-center">
             <div>
-              <a href="mailto:tonixase@gmail.com" className="text-blue-600 hover:underline">tonixase@gmail.com</a>
+              <a href="mailto:toni@htps.io" className="hover:underline">toni@htps.io</a>
             </div>
             <div className="flex gap-4">
               <a href="https://www.linkedin.com/in/antonioni/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">LinkedIn</a>

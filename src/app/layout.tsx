@@ -12,16 +12,16 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'Antonioni — Engineer',
+  title: 'Toni N. — Engineer',
   description: 'I build systems across payments, security, and data.',
   keywords: [
-    'Antonioni Nascimento Oliveira',
+    'Toni N.',
     'software',
     'security',
     'payments',
     'data'
   ],
-  authors: [{ name: 'Antonioni Nascimento Oliveira' }],
+  authors: [{ name: 'Toni N.' }],
   formatDetection: {
     email: false,
     address: false,
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'Antonioni Nascimento Oliveira',
+    title: 'Toni N.',
   },
   robots: {
     index: true,
@@ -54,16 +54,16 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Antonioni — Engineer',
+    title: 'Toni N. — Engineer',
     description: 'Systems, security, payments, data.',
     url: '/',
-    siteName: 'Antonioni',
+    siteName: 'Toni N.',
     images: [{ url: '/og-image.svg', width: 1200, height: 630, type: 'image/svg+xml' }],
     type: 'website',
   },
   twitter: {
     card: 'summary',
-    title: 'Antonioni — Engineer',
+    title: 'Toni N. — Engineer',
     description: 'Systems, security, payments, data.',
     images: ['/og-image.svg'],
   },
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
   other: {
     'google-site-verification': process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '',
   },
-  applicationName: 'Antonioni',
+  applicationName: 'Toni N.',
   referrer: 'origin-when-cross-origin',
 };
 
@@ -108,7 +108,7 @@ export default function RootLayout({
           {JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Person',
-            name: 'Antonioni Nascimento Oliveira',
+            name: 'Toni N.',
             url: '/',
           })}
         </Script>
